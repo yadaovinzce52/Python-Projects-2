@@ -8,6 +8,6 @@ weather_params = {
     'appid': api_key
 }
 
-response = requests.get('https://api.openweathermap.org/data/2.5/onecall', params=weather_params)
+response = requests.get('https://api.openweathermap.org/data/3.0/onecall', params=weather_params)
 print(response.json())
 
