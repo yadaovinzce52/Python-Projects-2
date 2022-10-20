@@ -2,9 +2,9 @@ import requests
 from twilio.rest import Client
 
 endpoint = 'https://api.openweathermap.org/data/3.0/onecall'
-api_key = '3c6f9af205d7167ed3c450104c244cc2'
-account_sid = 'AC37e61f3ddaabe345e2c182eceea32689'
-auth_token = 'f96dab8cf4ee726924ce927d085a343d'
+api_key = 'openweather apikey'
+account_sid = 'twilio acc SID'
+auth_token = 'auth token'
 
 weather_params = {
     'lat': 18.3363,
@@ -30,7 +30,7 @@ if will_rain:
     message = client.messages \
         .create(
             body="It is going to rain today! Remember to bring an umbrella!",
-            from_='+19207173270',
-            to='+18505596306'
+            from_='twilio phone number',
+            to='phone number'
         )
     print(message.sid)
